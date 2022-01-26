@@ -1,0 +1,109 @@
+public final String goodAnswers11 = "11";
+    public final String goodAnswers12 = "12";
+    public final String goodAnswers13 = "13";
+    public final String goodAnswers21 = "21";
+    public final String goodAnswers22 = "22";
+    public final String goodAnswers23 = "23";
+    public final String goodAnswers31 = "31";
+    public final String goodAnswers32 = "32";
+    public final String goodAnswers33 = "33";
+
+
+    public final String wrongAnswers1 = "a";
+    public final String wrongAnswers2 = "b";
+    public final String wrongAnswers3 = "c";
+    public final String wrongAnswers4 = "d";
+    public final String wrongAnswers5 = "e";
+    public final String goodAnswers21 = "21";
+        public final String goodAnswers22 = "22";
+        public final String goodAnswers23 = "23";
+
+    //a randomszám után csinál egy sorrendet
+        public List<Integer> order (int random1,List<Integer> MyOrderlist ){
+            return MyOrderlist;
+        }
+    /*
+                    answerButton1.setText(myTextList.get(counter).getAnswer1(counter));
+                    answerButton2.setText(myTextList.get(counter).getAnswer2(counter));
+                    answerButton3.setText(myTextList.get(counter).getAnswer3(counter));
+                    */
+  /*
+          answerButtonLabel1.setDisable(true);
+          answerButtonLabel1.setVisible(true);
+          answerRectangle1.setDisable(true);
+          answerRectangle1.setVisible(true);
+          //if(list.get(0)==1){}
+          counterright++;
+          /*
+          if(answerButton1.getText() == answerButton2.getText() ){//ha két gomb kiosztott szövege megegyezik, csak "Helyes válasz!"-lehet kapni, de ez csak viccelődés, később kiveendő
+              goodAnswer.setVisible(true);
+          }else {
+
+              if (random1 == 0) {
+                  goodAnswer.setVisible(true);//Megjelenik, hogy: Helyes válasz!
+                  coloredLabels(answerRectangle1, answerButtonLabel1, Color.GREEN);
+                  counterright++;
+              } else {
+                  wrongAnswerLabel.setVisible(true);//Megjelenik, hogy Helytelen válasz! A helyes válasz a következő:
+                  goodAnswer2.setVisible(true);//a jó válasz label látható lesz a beállított szöveggel(valamelyik helyes válasz)
+                  goodAnswer2.setText(myTextList1.get(counter).getAnswer1());
+                  coloredLabels(answerRectangle1, answerButtonLabel1, Color.RED);
+                  if(random1 == 1){
+                      coloredLabels(answerRectangle2, answerButtonLabel2, Color.GREEN);
+                  }
+                  if(random1 == 2){
+                      coloredLabels(answerRectangle3, answerButtonLabel3, Color.GREEN);
+                  }
+              }
+          }
+
+          */
+     /*
+             answerButtonLabel2.setDisable(true);
+             answerRectangle2.setDisable(true);
+             answerButtonLabel2.setVisible(true);
+
+             answerRectangle2.setVisible(true);
+             counterright++;
+             /*
+             if(random1== 1){
+                 goodAnswer.setVisible(true);//Megjelenik, hogy: Helyes válasz!
+                 coloredLabels(answerRectangle2, answerButtonLabel2, Color.GREEN);
+                 counterright++;
+             }else{
+                 wrongAnswerLabel.setVisible(true);//Megjelenik, hogy Helytelen válasz! A helyes válasz a következő:
+                 goodAnswer2.setVisible(true);//a jó válasz label látható lesz a beállított szöveggel(valamelyik helyes válasz)
+                 goodAnswer2.setText(myTextList1.get(counter).getAnswer1());
+                 coloredLabels(answerRectangle2, answerButtonLabel2, Color.RED);
+                 if(random1 == 0){
+                     coloredLabels(answerRectangle1, answerButtonLabel1, Color.GREEN);
+                 }
+                 if(random1 == 2){
+                     coloredLabels(answerRectangle3, answerButtonLabel3, Color.GREEN);
+                 }
+             }
+             */
+  public int randomSzam(){
+         System.out.println("randomSzam lefut.");
+         double doubleRandomNumber = Math.random() * 3;
+         int randomNumber = (int)doubleRandomNumber;
+         return randomNumber;
+     }
+  public void coloredButtonEvent(ActionEvent actionEvent) {
+         rectangle.setVisible(true);
+         rectangle.setFill(Color.RED);
+         nemOKLabel.setVisible(true);
+     }
+
+     public static void coloredLabels (Rectangle myRectangle, Label textLabel, Color labelColor){
+         myRectangle.setVisible(true);
+         myRectangle.setFill(labelColor);
+         textLabel.setVisible(true);
+
+     }
+//if(!MyButtons.get(MyButtons.indexOf(buttonck)).isPressed() && shufflelista.get((MyButtons.indexOf(buttonck))) != 1){
+          //  MyButtons.get(MyButtons.indexOf(buttonck)).setDisable(true);
+        //}
+ //MyButtons.remove(MyButtons.get(MyButtons.indexOf(buttonck)));//a lenyomott gombot kivesszük a listából
+            // MyButtons.stream().forEach(a -> a.setDisable(true));//a maradék összesre hívunk egy .setDisable(true)-t
+             //MyButtons.add(MyButtons.get(MyButtons.indexOf(buttonck)));//a lenyomott visszatesszük a listába/hogy a lista eredeti mérete meglegyen
